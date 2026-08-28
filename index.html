@@ -3,59 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="FP Selection — uma seleção exclusiva de carros esportivos."
+    >
+
     <link rel="stylesheet" href="style.css">
 
-    <title>FP Sellection</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <title>FP Selection — Performance & Luxury</title>
 </head>
+
 <body>
+
     <header>
-        <img src="img/logo.png" alt="Logo Fp sellection">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="Logo FP Selection">
+        </a>
+
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Carros</li>
-                <li>Fale Conosco</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#carros">Carros</a></li>
+                <li><a href="#">Fale Conosco</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
+
+    <main id="carros">
+
+        <section class="container">
+
+            <!-- Elementos decorativos do fundo -->
+            <div class="background-glow glow-one"></div>
+            <div class="background-glow glow-two"></div>
+            <div class="background-grid"></div>
+
 
             <div class="list">
-                <div class="item">
+
+                <!-- CARRO 01 -->
+                <div class="item active">
+
                     <div class="car-img">
-                        <img src="img/1.png" alt="imagem Carro">
+                        <img src="img/1.png" alt="Porsche 911 Turbo S">
                     </div>
 
                     <div class="content">
-                        <p class="car-information">Único Dono</p>
 
-                        <h2>Ferrari</h2>
-
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis harum labore eveniet officia fuga tenetur dicta possimus nihil aspernatur, quia nemo quas voluptas laboriosam. Ipsum soluta dolorum nesciunt recusandae vel.
+                        <p class="car-information">
+                            PERFORMANCE • 2024
                         </p>
 
-                        <button class="information">Saiba Mais</button>
+                        <h2>
+                            Porsche 911
+                        </h2>
+
+                        <p class="description">
+                            Precisão alemã em cada detalhe. O 911 Turbo S combina
+                            desempenho brutal, tecnologia de ponta e um design
+                            atemporal para entregar uma experiência incomparável.
+                        </p>
+
+                        <button class="information">
+                            Saiba Mais
+                        </button>
+
                     </div>
                 </div>
+
+
+                <!-- CARRO 02 -->
+                <div class="item">
+
+                    <div class="car-img">
+                        <img src="img/2.png" alt="Ferrari 488 Spider">
+                    </div>
+
+                    <div class="content">
+
+                        <p class="car-information">
+                            EXCLUSIVIDADE • 2023
+                        </p>
+
+                        <h2>
+                            Ferrari 488
+                        </h2>
+
+                        <p class="description">
+                            Uma verdadeira obra-prima italiana. A 488 entrega
+                            potência, elegância e uma experiência de condução
+                            feita para quem não aceita nada menos que o extraordinário.
+                        </p>
+
+                        <button class="information">
+                            Saiba Mais
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- CARRO 03 -->
+                <div class="item">
+
+                    <div class="car-img">
+                        <img src="img/3.png" alt="Lamborghini Huracán">
+                    </div>
+
+                    <div class="content">
+
+                        <p class="car-information">
+                            SUPERCAR • 2022
+                        </p>
+
+                        <h2>
+                            Lamborghini
+                        </h2>
+
+                        <p class="description">
+                            Design agressivo, presença marcante e desempenho
+                            impressionante. Uma máquina criada para transformar
+                            cada segundo ao volante em uma experiência memorável.
+                        </p>
+
+                        <button class="information">
+                            Saiba Mais
+                        </button>
+
+                    </div>
+                </div>
+
             </div>
 
+
+            <!-- SETAS -->
             <div class="arrows">
-                <button><img src="img/arrow.png" alt="Seta Esquerda"></button>
-                <button><img src="img/arrow.png" alt="Seta direita"></button>
+
+                <button id="prev" aria-label="Carro anterior">
+                    <img src="img/arrow.png" alt="Seta para esquerda">
+                </button>
+
+                <button id="next" aria-label="Próximo carro">
+                    <img src="img/arrow.png" alt="Seta para direita">
+                </button>
+
             </div>
 
+
+            <!-- INDICADORES -->
             <div class="indicators">
-                <div class="number">01</div>
+
+                <div class="number">
+                    01
+                </div>
+
+                <div class="indicator-info">
+                    <span>MODELOS</span>
+                    <span class="line"></span>
+                </div>
+
                 <ul>
                     <li class="active"></li>
                     <li></li>
                     <li></li>
                 </ul>
+
+            </div>
+
+
+            <!-- TEXTO DECORATIVO -->
+            <div class="vertical-text">
+                FP / SELECTION
+            </div>
+
+
+            <!-- SCROLL INDICATOR -->
+            <div class="scroll-indicator">
+                <span></span>
+                <p>EXPLORE</p>
             </div>
 
         </section>
+
     </main>
+
+
+    <script src="scripts.js"></script>
+
 </body>
 </html>
