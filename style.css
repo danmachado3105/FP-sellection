@@ -433,6 +433,10 @@ nav ul li a:hover::after {
 
     margin-top: 8px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     border: 1px solid rgba(39, 232, 255, 0.8);
 
     border-radius: 30px;
@@ -449,6 +453,8 @@ nav ul li a:hover::after {
     letter-spacing: 1px;
 
     text-transform: uppercase;
+
+    text-decoration: none;
 
     cursor: pointer;
 
