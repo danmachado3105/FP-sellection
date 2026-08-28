@@ -31,6 +31,12 @@ header {
         & ul {
             display: grid;
             grid-template-columns: repeat(3, 200px);
+
+            & li {
+                &:hover {
+                color: #beff1b;
+            }
+            }
         }
     }
 }
@@ -69,7 +75,7 @@ section {
                 height: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: end;
+                justify-content: center;
                 align-items: end;
                 gap: 20px;
 
@@ -103,12 +109,48 @@ section {
             }
 
         }
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 200px;
+            width: 100%;
+            top: 50%;
+            border-top: 1px solid white;
+        }
     }
 
     .arrows {
-        & button {
+        width: 70vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -25px);
+        display: flex;
+        justify-content: space-between;
+
+        & button:nth-child(1) {
             & img {
-                width: 100px;
+                transform: scale(-1);
+            }
+        }
+
+        & button {
+            top: 60%;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+
+            & img {
+                width: 20px;
+                margin-top: 3px;
+                cursor: pointer;
+            }
+
+            &:hover {
+                background-color: #beff1b;
             }
         }
     }
@@ -127,6 +169,23 @@ section {
 
         & .number {
             font-size: 5em;
+        }
+
+        & ul {
+            display: flex;
+            gap: 10px;
+
+            & li {
+                width: 50px;
+                height: 5px;
+                background-color: #beff1b;
+                border-radius: 5px;
+                transition: 0.5s;
+            }
+
+            & .active {
+                background-color: white;
+            }
         }
     }
 }
